@@ -7,7 +7,7 @@ require('dotenv').config();
 
 require("./models/db");
 
-const path = require("path")
+const path = require("path");
 
 const categoryRoute = require("./routes/categories");
 const tagRoute = require("./routes/tags");
