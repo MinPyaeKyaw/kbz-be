@@ -17,7 +17,7 @@ const upload = multer({ storage: storage });
 
 router.post('/', upload.single("photo"), async (req, res) => {
 
-    req.body['photo'] = 'https://kbz-b4qwvikxp-minpyaekyaw.vercel.app'+'/images/'+req.file.filename;
+    req.body['photo'] = 'https://kbz-b4qwvikxp-minpyaekyaw.vercel.app/images/'+req.file.filename;
     
     const createPost = new postModel(req.body);
 
