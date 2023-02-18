@@ -6,7 +6,7 @@
   "author": "Min Pyae Kyaw <saiminpyaekyaw@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "concurrently": "^7.6.0",
