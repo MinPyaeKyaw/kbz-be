@@ -31,11 +31,16 @@ router.post('/', upload.single("photo"), async (req, res) => {
 })
 
 router.delete('/:id', async (req, res) => {
+
+    console.log(req.params.id)
+
     try {
-        const deletedPost = await postModel.deleteOne(req.params.id);
+        const deletedPost = await postModel.deleteOne({_id: req.params.id});
+        console.log(deletedPost)
         
         res.status(200).json(deletedPost);
     } catch (error) {
+        console.log(error)
         res.status(500).json(error);
     }
 })
