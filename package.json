@@ -6,7 +6,9 @@
   "author": "Min Pyae Kyaw <saiminpyaekyaw@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "dependencies": {
     "concurrently": "^7.6.0",
